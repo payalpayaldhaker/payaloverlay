@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <style> 
+            body{ 
+                margin: 0px;
+
+            }
+            
+            .p_box{ 
+                width:278px;
+                  height: 212px;
+                   
+                    background-color: red;
+                    margin: 250px auto;
+                    background-image: url("img/photo-3\ \(1\).jpg");
+                    background-size: cover;
+                    position: relative;
+                   
+            }
+            .p_blackbox{ 
+                  width:258px;
+                  height: 192px;
+                    background-color:#000;
+                    position: absolute;
+                    top: 0px;
+                    left: 0px;
+                    color: #fff;
+                    padding: 20px;
+                    transition:all 1s linear;
+                
+                    transform: perspective(200px)  rotateZ(-360deg);
+                
+            }
+
+            .p_box:hover  .p_blackbox{
+                transform: perspective(200px)   rotateZ(0deg); 
+                
+            }
+            
+        
+        </style>
+</head>
+<body>
+        <div class="p_box">
+            <div class="p_blackbox ">
+                
+                Lorem Ipsum
+                Integer sollicitudin lacus libero, in iaculis turpis tristique sit amet. Nullam augue elit, feugiat nec arcu eget, sodales feugiat ligula.
+            </div>
+        </div>
+</body>
+</html>
